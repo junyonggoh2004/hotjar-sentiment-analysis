@@ -1,1 +1,1 @@
-# amara_test
+# HotJar Sentiment Analysis Project
