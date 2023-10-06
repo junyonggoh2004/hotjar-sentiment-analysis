@@ -1,4 +1,6 @@
 env
 notebooks
-test.py
+results
 __pycache__/
+test.py
+

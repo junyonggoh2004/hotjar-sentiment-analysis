@@ -1,6 +1,7 @@
 import contractions
 import re
 import unicodedata
+from deep_translator.exceptions import TranslationNotFound
 from joblib import Parallel, delayed
 
 from nltk.corpus import wordnet
@@ -19,9 +20,12 @@ class TextNormaliser:
         self.normalised_corpus = []
 
     def translate_text(self, text):
-        text = self.translator.translate(
-            text, src='auto', dest='en')
-        return "" if text is None else text
+        try:
+            text = self.translator.translate(
+                text, src='auto', dest='en')
+            return "" if text is None else text
+        except TranslationNotFound:
+            return text
     
     def correct_text(self, text):
         text = str(TextBlob(text).correct())

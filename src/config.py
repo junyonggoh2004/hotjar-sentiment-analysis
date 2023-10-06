@@ -6,7 +6,7 @@ from nltk.stem import WordNetLemmatizer
 from sentence_transformers import SentenceTransformer
 
 
-# Constants and Configuration Settings
+# Configuration Settings
 CSV_EXTENSION = '.csv'
 # Defines the file extension for CSV files.
 
