@@ -11,21 +11,20 @@ class TextTagger:
     def load_configure_nltk(self):
         # Define the list of keys to remove
         keys_to_remove = ['--', ':', '(', ')', '.', ',', '``', '$', 'TO', 'WP', 'UH',
-                        'PRP', 'WP$', 'NNPS', 'PRP$', 'WDT', 'RBR', 'RP', 'JJR', 'PDT', 'EX', 'SYM']
+                          'PRP', 'WP$', 'NNPS', 'PRP$', 'WDT', 'RBR', 'RP', 'JJR', 'PDT', 'EX', 'SYM']
 
         # Remove unwanted keys from the NLTK dictionary
         for key in keys_to_remove:
             self.nltk_dict.pop(key, None)
 
     def prepare_tag_word_df(self, df):
-        # Create an empty DataFrame with columns for each tag in the NLTK dictionary
-        tag_word_df = pd.DataFrame({tag: [''] * len(df) for tag in self.nltk_dict.keys()}, dtype='object')
+        tag_word_df = pd.DataFrame(
+            {tag: [''] * len(df) for tag in self.nltk_dict.keys()}, dtype='object')
 
         # Insert the 'clean_text' column from the input DataFrame
         tag_word_df.insert(0, 'clean_text', df['clean_text'])
-
-        # Merge the tag_word_df with the input DataFrame
-        df = df.merge(tag_word_df, on='clean_text', how='inner').drop_duplicates().reset_index(drop=True)
+        df = df.merge(tag_word_df, on='clean_text',
+                      how='inner').drop_duplicates().reset_index(drop=True)
 
         return df
 
@@ -46,5 +45,5 @@ class TextTagger:
         self.load_configure_nltk()
         df = self.prepare_tag_word_df(df)
         df = self.populate_df_by_tag(df)
-        
+
         return df

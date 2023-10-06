@@ -1,2 +1,8 @@
 env
 notebooks
+src/test.py
+src/__pycache__
+src/Processing/__pycache__
+src/SentenceSimilarity/__pycache__
+src/SentimentClassification/__pycache__
+src/TextTagger/__pycache__

@@ -10,12 +10,10 @@ from sentence_transformers import SentenceTransformer
 CSV_EXTENSION = '.csv'
 # Defines the file extension for CSV files.
 
-ZIP_EXTRENSION = ".zip"
+ZIP_EXTENSION = ".zip"
 # Defines the file extension for CSV files.
 
-SOURCE_DIRECTORY = "C:\\Users\\Goh Jun Yong\\Downloads"
-# SOURCE_DIRECTORY = "C:\\Users\\intern\\Downloads"
-# Change it to your "Downloads" path
+SOURCE_DIRECTORY = f"{os.path.expanduser('~')}\\Downloads"
 # Defines the directory containing the ZIP files to be unzipped
 
 TARGET_DIRECTORY = "C:\\Users\\Goh Jun Yong\\OneDrive\\Desktop\\Internship\\HotJar Sentiment Analysis\\hotjar-sentiment-analysis\\data\\raw"
@@ -24,14 +22,15 @@ TARGET_DIRECTORY = "C:\\Users\\Goh Jun Yong\\OneDrive\\Desktop\\Internship\\HotJ
 
 DASHBOARD_DATA_DIRECTORY = "C:\\Users\\Goh Jun Yong\\OneDrive\\Desktop\\Internship\\HotJar Sentiment Analysis\\hotjar-sentiment-analysis\\data\\dashboard_data"
 # DASHBOARD_DATA_DIRECTORY = "L:\\Public Folder\\Dash Board\\JJ\\Digital Marketing\\HotJar Sentiment Analysis\\data\\dashboard_data"
-# Defines the destination directory for processed data
+# Defines the destination directory for processed data for PowerBI
 
 RESULTS_DIRECTORY = "C:\\Users\\Goh Jun Yong\\OneDrive\\Desktop\\Internship\\HotJar Sentiment Analysis\\hotjar-sentiment-analysis\\results"
 # RESULTS_DIRECTORY = "L:\\Public Folder\\Dash Board\\JJ\\Digital Marketing\\HotJar Sentiment Analysis\\results"
 # Defines the destination directory for analysis results
 
-RAW_DATA_DIRECTORY = os.path.join(os.path.dirname(__file__), '..', 'data', 'raw')
-# Specifies the path to the data folder where raw data files are stored.
+ARCHIVED_DATA_DIRECTORY = "C:\\Users\\Goh Jun Yong\\OneDrive\\Desktop\\Internship\\HotJar Sentiment Analysis\\hotjar-sentiment-analysis\\data\\archive"
+# RESULTS_DIRECTORY = "L:\\Public Folder\\Dash Board\\JJ\\Digital Marketing\\HotJar Sentiment Analysis\\data\\archive"
+# Defines the destination directory for archived data files
 
 KEYWORDS_TO_UNZIP = ["ASIN_Exit_Synxis",
                      "ABKK_Exit_Synxis", "ASRS_Exit_Synxis"]

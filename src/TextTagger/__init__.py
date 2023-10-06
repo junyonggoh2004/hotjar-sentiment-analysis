@@ -9,6 +9,7 @@ TextTagger.py
 TextTaggerSimplifier.py
 - `__init__(self)`: Initialises the `TextTaggerSimplifier` class.
 - `simplify_pos_words(self, hotel, df)`: Simplifies part-of-speech words into categories such as nouns, verbs, adjectives, and adverbs.
+- `export_words_df(self)`: Exports nouns, verbs, adjectives, and adverbs into a CSV file for use in PowerBI dashboard.
 - `top_n_words(self, words_dict, word_category, n, hotel)`: Retrieves the top `n` most common words for a given word category (noun, verb, adjective, adverb) and hotel outlet.
 - `run_top_n_words(self, df)`: Runs the process of simplifying and retrieving the top n words based on user input for word category and hotel outlet.
 

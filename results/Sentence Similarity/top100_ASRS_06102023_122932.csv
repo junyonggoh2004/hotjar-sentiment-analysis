@@ -1,0 +1,112 @@
+Response 1,Response 2,Score
+are all rooms pet friendly,dog friendly room,0.86
+room type not available,wrong room type,0.835
+are all rooms pet friendly,Which room to book if I have pet?,0.815
+I cant sign into the member program,member sign in,0.78
+too expensive. I need a promo code,may you help me source the best promo code for the stay,0.752
+"i need one bedroom villa, seems like dont have",can the one bedroom villa accommodate dog?,0.748
+signing up,member sign in,0.738
+pet allowed,i have a pet,0.735
+dog friendly room,Which room to book if I have pet?,0.707
+"hi i would iike to book a room with a pet, what room should i choose
+
+pet is a shiba inu, 10kg",Which room to book if I have pet?,0.69
+we are 2 adults and 2 children,"i have 2 adults 2 children, aged 6 and aged 2",0.689
+dog friendly room,can the one bedroom villa accommodate dog?,0.687
+want to book two rooms,can i check is there still any room for booking,0.682
+I need to bring my dog but I dont see any promo for that ?,I am to know whether I can bring my dog in,0.677
+"Hi there, are there specific rooms for booking if I bring my dog in to stay at the hotel?",dog friendly room,0.674
+pet allowed,is rabbit allow?,0.674
+"Hi there, are there specific rooms for booking if I bring my dog in to stay at the hotel?",Which room to book if I have pet?,0.673
+price! is there any discount code?,too expensive. I need a promo code,0.658
+is parking available?,does it come with complimentary parking,0.648
+i need to rooms but they dont have options,no available rooms on the preferred date,0.64
+high prices,price increase,0.635
+want to book two rooms,Which room to book if I have pet?,0.632
+pet allowed,are all rooms pet friendly,0.632
+are all rooms pet friendly,i have a pet,0.632
+i dont' want to be a member,member sign in,0.624
+"Hi there, are there specific rooms for booking if I bring my dog in to stay at the hotel?",can the one bedroom villa accommodate dog?,0.619
+room type not available,no available rooms on the preferred date,0.617
+is there connecting room?,wrong room type,0.616
+high prices,The price is too high and far from city,0.612
+free cancellation,"Cancel Policy
+Non Refundable and Non Cancellation.",0.612
+Waiting on response to an email that I can maintain the same room across 2 bookings,Hello I have already booked the rooms but haven't received any confirmation via email,0.609
+i have a pet,Which room to book if I have pet?,0.606
+no 4 pax room,cant see how the room can sleep 3 or more pax,0.604
+are all rooms pet friendly,"hi i would iike to book a room with a pet, what room should i choose
+
+pet is a shiba inu, 10kg",0.603
+the date that I want is unavailable,no available rooms on the preferred date,0.603
+free cancellation,"Hi, I am looking to book few rooms, do you have any offer with discounted price and free cancellation?",0.602
+can i check is there still any room for booking,wrong room type,0.598
+Which room to book if I have pet?,can i check is there still any room for booking,0.598
+want to book two rooms,"Hi there, are there specific rooms for booking if I bring my dog in to stay at the hotel?",0.595
+i need to rooms but they dont have options,no 4 pax room,0.593
+"Hi there, are there specific rooms for booking if I bring my dog in to stay at the hotel?","hi i would iike to book a room with a pet, what room should i choose
+
+pet is a shiba inu, 10kg",0.592
+are all rooms pet friendly,can the one bedroom villa accommodate dog?,0.592
+i need to rooms but they dont have options,room type not available,0.587
+Not sure if you would have a bed to sleep 2 adults and a separate bed for 1 child 9 years old. We do not want the child to share the same bed with parents. Thanks,"lack of options for a childs bed in the room, we need a bed, not a cot",0.586
+can i check is there still any room for booking,room type not available,0.585
+want to book two rooms,"hi i would iike to book a room with a pet, what room should i choose
+
+pet is a shiba inu, 10kg",0.581
+want to book two rooms,is there connecting room?,0.577
+Your price is inconsistent,comparing price,0.574
+too expensive. I need a promo code,How do I use the Special offer code from MOE,0.573
+"Hi there, are there specific rooms for booking if I bring my dog in to stay at the hotel?",can i check is there still any room for booking,0.572
+Lack of pictures of the room,wrong room type,0.571
+waiting for email reply,Waiting on response to an email that I can maintain the same room across 2 bookings,0.571
+I cant sign into the member program,signing up,0.568
+want to book two rooms,want to book 1 night but cannot,0.568
+are all rooms pet friendly,"Hi there, are there specific rooms for booking if I bring my dog in to stay at the hotel?",0.567
+"I am looking for 1 bedroom, 2 adults and 2 13 year old children - twins",does the deluxe room has twin bed available?,0.567
+i need to rooms but they dont have options,wrong room type,0.563
+want to book two rooms,is there a room with a 1 and a half bathroom?,0.562
+Am looking at other options.,looking for day use,0.558
+high prices,comparing price,0.556
+can i see the private pool?,"Hi , just want to check if the pool is heated in the Villa?",0.555
+Not sure if you would have a bed to sleep 2 adults and a separate bed for 1 child 9 years old. We do not want the child to share the same bed with parents. Thanks,5 people one bed hello,0.555
+want to book two rooms,IS THERE A FRIDGE IN THE ROOM,0.552
+"i want a family style room for 3, our child is 10 years old.","I am looking for 1 bedroom, 2 adults and 2 13 year old children - twins",0.551
+Any special discount for member's birthday?,is there help to organise a birthday party?,0.551
+want to book two rooms,"Hi, I am looking to book few rooms, do you have any offer with discounted price and free cancellation?",0.548
+want to book two rooms,wrong room type,0.548
+want to book two rooms,dog friendly room,0.546
+is there connecting room?,room type not available,0.546
+high prices,the price is a bit more than we were looking for,0.546
+can i check is there still any room for booking,IS THERE A FRIDGE IN THE ROOM,0.542
+"i need one bedroom villa, seems like dont have","Hi , just want to check if the pool is heated in the Villa?",0.542
+no available rooms on the preferred date,wrong room type,0.542
+dog friendly room,"hi i would iike to book a room with a pet, what room should i choose
+
+pet is a shiba inu, 10kg",0.541
+Which room to book if I have pet?,IS THERE A FRIDGE IN THE ROOM,0.541
+dog friendly room,is there connecting room?,0.541
+IS THERE A FRIDGE IN THE ROOM,wrong room type,0.541
+high prices,Rates high,0.541
+"Hi, I am looking to book few rooms, do you have any offer with discounted price and free cancellation?",can i check is there still any room for booking,0.54
+want to book two rooms,i need to rooms but they dont have options,0.539
+pet allowed,Which room to book if I have pet?,0.538
+is there a room with a 1 and a half bathroom?,wrong room type,0.537
+booking using corporates rate,Wondering if corporate rates is cheaper than member rates,0.537
+price! is there any discount code?,may you help me source the best promo code for the stay,0.536
+the price is a bit more than we were looking for,comparing price,0.535
+Your price is inconsistent,price increase,0.534
+is there connecting room?,is there a room with a 1 and a half bathroom?,0.533
+is there connecting room?,Lack of pictures of the room,0.533
+is there connecting room?,IS THERE A FRIDGE IN THE ROOM,0.532
+i need to rooms but they dont have options,can i check is there still any room for booking,0.529
+are all rooms pet friendly,is there connecting room?,0.527
+price! is there any discount code?,How do I use the Special offer code from MOE,0.527
+dog friendly room,I am to know whether I can bring my dog in,0.526
+dog friendly room,IS THERE A FRIDGE IN THE ROOM,0.526
+is there connecting room?,Which room to book if I have pet?,0.525
+are all rooms pet friendly,IS THERE A FRIDGE IN THE ROOM,0.524
+are all rooms pet friendly,wrong room type,0.524
+IS THERE A FRIDGE IN THE ROOM,Lack of pictures of the room,0.524
+i need to rooms but they dont have options,is there a room with a 1 and a half bathroom?,0.523
+Room Charge is expensive.,cant see how the room can sleep 3 or more pax,0.522

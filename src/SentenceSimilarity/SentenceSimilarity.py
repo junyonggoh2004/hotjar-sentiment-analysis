@@ -14,17 +14,14 @@ class SentenceSimilarity():
     def __init__(self):
         configure_pandas_display_options()
         filter_warnings()
-        self.hotels = HOTELS
-        self.model = SENTENCE_TRANSFORMER
         self.cos_sim = None
         self.cos_sim_matrix = []
         self.filtered_df = []
         self.sentence_similarity_df = None
-        self.translator = TRANSLATOR
 
     def compute_embeddings_and_similarity(self, hotel, df):
         self.filtered_df = df[df['Hotel'] == hotel] if hotel != 'all' else df
-        embeddings = self.model.encode(
+        embeddings = SENTENCE_TRANSFORMER.encode(
             np.array(self.filtered_df['clean_text']))
         self.cos_sim = util.cos_sim(embeddings, embeddings)
         return self.cos_sim
@@ -57,10 +54,10 @@ class SentenceSimilarity():
                     text1_language = detect(text1)
                     text2_language = detect(text2)
                     if text1_language != "en":
-                        text1 = self.translator.translate(text1)
+                        text1 = TRANSLATOR.translate(text1)
 
                     if text2_language != "en":
-                        text2 = self.translator.translate(text2)
+                        text2 = TRANSLATOR.translate(text2)
 
                     score_rounded = self.cos_sim[row][col].detach(
                     ).numpy().round(3)
@@ -88,7 +85,7 @@ class SentenceSimilarity():
 
             if hotel == 'q':
                 return None
-            elif hotel in self.hotels:
+            elif hotel in HOTELS:
                 break
             else:
                 print("\nInvalid hotel outlet. Please enter a valid one.")

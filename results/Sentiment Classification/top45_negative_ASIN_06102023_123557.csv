@@ -1,5 +1,6 @@
 Response,Confidence,Label
 Hi Please return my call at 96800746,70.8%,negative
+"No availability, trying to book a room for 2 adults and 2 kids (4/6 years old) for 13/02/24 to 23/02/24.",69.0%,negative
 bad review,68.9%,negative
 Is there a single room available from 27 July to 30 July 2023?,51.2%,negative
 i have not received confirmation email from the hotel after making reservation last night,50.4%,negative
@@ -19,11 +20,12 @@ unable to choose 2 rooms,42.6%,negative
 Frustrated that a 13 year old is considered an adult? Seems weird,42.0%,negative
 the room I'm interested in is not showing up. One bedroom apartment?,41.7%,negative
 "There are no proper photos of the bathrooms.  Can you tell me if the toilets are floor pedestal style, or are they wall hung?",41.6%,negative
+i am unable to reset my password,41.4%,negative
 do you have senior citizen discount?,40.7%,negative
 "No  credit card booking ,only SGD payment",39.7%,negative
 "Hello, I have a question",39.6%,negative
-website is lagging,38.3%,negative
 I looking to check in on July 28 and Check out on July 30 but it doesn't allow me,38.3%,negative
+website is lagging,38.3%,negative
 we are looking for a one bedrrom apartartment which is not showing,37.9%,negative
 expensive & price increase,37.3%,negative
 I made a booking from Agoda and i have chosen wrong dates. Would appreciate if you could kindly accept my request to cancel the rooms so that i could renew my dates.,36.6%,negative

@@ -54,7 +54,6 @@ class TextNormaliser:
     def lemmatise_text(self, text):
         pos_tags = {'NN': wordnet.NOUN, 'JJ': wordnet.ADJ,
                     'VB': wordnet.VERB, 'RB': wordnet.ADV}
-        # Only noun and verb tagging works
         for pos_tag in pos_tags.values():
             tokens = word_tokenize(text)
             lemmatised_words = [self.lemmatiser.lemmatize(

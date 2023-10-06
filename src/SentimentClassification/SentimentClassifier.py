@@ -17,14 +17,10 @@ class SentimentClassifier():
         configure_pandas_display_options()
         filter_warnings()
         self.filtered_df = None
-        self.hotels = HOTELS
-        self.model = SENTIMENT_CLASSIFIER_MODEL
-        self.task = SENTIMENT_CLASSIFIER_TASK
         self.sentiment_classifier_df = None
-        self.translator = TRANSLATOR
 
     def create_sentiment_classifier_df(self, hotel, label, df):
-        sentiment_pipeline = pipeline(self.task, model=self.model)
+        sentiment_pipeline = pipeline(SENTIMENT_CLASSIFIER_TASK, model=SENTIMENT_CLASSIFIER_MODEL)
         label_dict = {
             '5 stars': 'positive',
             '4 stars': 'positive',
@@ -49,7 +45,7 @@ class SentimentClassifier():
                 if text is not None and not contains_only_punctuation(text):
                     text_language = detect(text)
                     if text_language != "en":
-                        text = self.translator.translate(text)
+                        text = TRANSLATOR.translate(text)
                         rows.append(
                             [f"{text}", f"{confidence}%", sentiment_label])
                     else:
@@ -84,17 +80,15 @@ class SentimentClassifier():
     def run_sentiment_classifier(self, df):
         print("\nEnter 'q' to return to the main menu.")
 
-        # Ask for user input for hotel name
         while True:
             hotel = input("\nEnter the hotel outlet (all, ASIN, ASRS, ABKK): ")
             if hotel == 'q':
                 return None
-            elif hotel in self.hotels:
+            elif hotel in HOTELS:
                 break
             else:
                 print("\nInvalid hotel outlet. Please enter a valid one.")
 
-        # Ask for user input for sentiment label
         while True:
             label = input(
                 "\nEnter the sentiment label (positive, neutral, negative): ")
@@ -111,7 +105,6 @@ class SentimentClassifier():
         print(
             f"\nThere is/are {sentiment_classifier_df_len} {label} response(s) from {hotel}.")
 
-        # Ask for the top n most common words
         while True:
             if sentiment_classifier_df_len == 0:
                 break
@@ -124,7 +117,7 @@ class SentimentClassifier():
             else:
                 n = input(f"\nEnter the number of top {label} response(s): ")
                 if n == 'q':
-                    return None  # Exit the function if 'q' is entered
+                    return None
                 try:
                     n = int(n)
                     if n > sentiment_classifier_df_len or n < 1:

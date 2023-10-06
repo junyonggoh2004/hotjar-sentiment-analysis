@@ -2,7 +2,7 @@
 DataExtractor.py
 - `__init__(self)`: Initialises the DataExtractor class.
 - `remove_existing_files(self)`: Removes existing files from the target directory.
-- `process_zip_files(self)`: Processes ZIP files and extracts the latest file by each keyword.
+- `process_zip_files(self)`: Processes ZIP files and extracts the latest file by each keyword into the 'raw' and 'archive' directories.
 - `run_extraction_pipeline(self)`: Runs the data extraction pipeline.
 
 DataProcessor.py
@@ -14,7 +14,7 @@ DataProcessor.py
 
 PowerBIColumnTransformer.py
 - __init__(self, df): Initializes the PowerBIColumnTransformer with a DataFrame.
-- return_dashboard_df(self): Saves the DataFrame to a CSV file for PowerBI.
+- return_dashboard_df(self): Saves the processed DataFrame to a CSV file for use in PowerBI Dashboard.
 - split_datetime_column(self): Splits a datetime column into date, day, and hour columns.
 - run_transformer_pipeline(self): Runs the column transformation pipeline.
 

@@ -1,38 +1,43 @@
 import warnings
 import subprocess
 import re
+import platform
 from datetime import datetime
+from colorama import Fore, Style
 
 import nltk
 import pandas as pd
 
+
 # Windows-specific
-
-
 def get_console_columns():
+    os_name = platform.system()
+
     try:
-        # Run the "mode" command and capture its output
+        if os_name == 'Windows':
+            cmd = ["mode"]
+        elif os_name in ['Linux', 'Darwin']:
+            cmd = ["stty", "-a"]
+        else:
+            print(f"{Fore.RED}UNSUPPORTED OPERATING SYSTEM{Style.RESET_ALL}")
+            return None
+
         output = subprocess.check_output(
-            ["mode"], stderr=subprocess.STDOUT, shell=True, text=True)
+            cmd, stderr=subprocess.STDOUT, shell=os_name == 'Windows', text=True)
 
         if columns_match := re.search(r"Columns:\s+(\d+)", output):
             return int(columns_match[1])
-        return None
 
     except subprocess.CalledProcessError:
-        # Handle errors if the "mode" command fails
         print("Unable to retrieve console window columns.")
-        return None
+
+    return None
 
 
 def datetime_formatter():
     now = datetime.now()
-    # Format the date as 'dd-mm-yyyy'
     date_str = now.strftime('%d%m%Y')
-
-    # Format the time as 'hh-mm-ss'
     time_str = now.strftime('%H%M%S')
-
     return f"{date_str}_{time_str}"
 
 

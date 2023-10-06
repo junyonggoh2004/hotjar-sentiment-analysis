@@ -16,9 +16,7 @@ class PowerBIColumnTransformer:
         print(f"{Fore.LIGHTBLUE_EX}Dashboard data uploaded to '{DASHBOARD_DATA_DIRECTORY}'.{Style.RESET_ALL}\n")
 
     def split_datetime_column(self):
-        # Convert datetime column to datetime type
         self.df['Date Submitted'] = pd.to_datetime(self.df['Date Submitted'])
-        # Extract date, day, and start of the hour
         self.df['Date'] = self.df['Date Submitted'].dt.strftime('%Y-%m-%d')
         self.df['Day'] = self.df['Date Submitted'].dt.strftime('%A')
         self.df['Hour'] = self.df['Date Submitted'].dt.floor(
