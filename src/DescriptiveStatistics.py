@@ -9,7 +9,7 @@ class DescriptiveStatistics:
         return f"Data Collected from {self.df['Date Submitted'].min()} to {self.df['Date Submitted'].max()}"
 
     def get_df_head(self):
-        return f"Dataset Sample:\n{self.df.head()}"
+        return f"Dataset Sample:\n{self.df.sort_values(by='Date Submitted', ascending=False).head()}"
     
     def get_unique_user_count(self):
         return f"Number of Unique Users:\n{len(self.df['User'].unique())}"

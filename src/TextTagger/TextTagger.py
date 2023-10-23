@@ -1,5 +1,5 @@
-import pandas as pd
 import nltk
+import pandas as pd
 
 from config import NLTK_DICT
 

@@ -1,15 +1,14 @@
 from colorama import Fore, Style
 
-from utils import get_console_columns
+from DescriptiveStatistics import DescriptiveStatistics
+from Processing.DataExtractor import DataExtractor
 from Processing.DataProcessor import DataProcessor
 from Processing.PowerBIColumnTransformer import PowerBIColumnTransformer
-from SentenceSimilarity.SentenceSimilarityCore import SentenceSimilarityCore
-from SentimentClassification.SentimentClassifierCore import SentimentClassifierCore
-from Processing.DataExtractor import DataExtractor
 from Processing.TextNormaliser import TextNormaliser
+from SentimentClassification.SentimentClassifierCore import SentimentClassifierCore
+from SentenceSimilarity.SentenceSimilarityCore import SentenceSimilarityCore
 from TextTagger.TextTaggerCore import TextTaggerCore
-from DescriptiveStatistics import DescriptiveStatistics
-
+from utils import get_console_columns
 
 
 class SurveyAnalysis:

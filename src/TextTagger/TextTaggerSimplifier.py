@@ -1,11 +1,11 @@
 from collections import Counter
 import time
 
-import pandas as pd
 from colorama import Fore, Style
+import pandas as pd
 
-from config import HOTELS, RESULTS_DIRECTORY, DASHBOARD_DATA_DIRECTORY
-from utils import configure_pandas_display_options, filter_warnings, datetime_formatter
+from config import DASHBOARD_DATA_DIRECTORY, HOTELS, RESULTS_DIRECTORY
+from utils import configure_pandas_display_options, datetime_formatter, filter_warnings
 
 
 class TextTaggerSimplifier():

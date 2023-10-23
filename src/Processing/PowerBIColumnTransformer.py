@@ -1,8 +1,9 @@
 import os
+
+from colorama import Fore, Style
 import pandas as pd
 
 from config import DASHBOARD_DATA_DIRECTORY
-from colorama import Fore, Style
 
 
 class PowerBIColumnTransformer:

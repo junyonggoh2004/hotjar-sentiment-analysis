@@ -1,10 +1,10 @@
-import warnings
-import subprocess
-import re
-import platform
 from datetime import datetime
-from colorama import Fore, Style
+import platform
+import re
+import subprocess
+import warnings
 
+from colorama import Fore, Style
 import nltk
 import pandas as pd
 

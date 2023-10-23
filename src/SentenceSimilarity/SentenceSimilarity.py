@@ -1,8 +1,8 @@
-import numpy as np
-import pandas as pd
 import time
 
 from langdetect import detect
+import numpy as np
+import pandas as pd
 from sentence_transformers import util
 from tqdm import tqdm
 
@@ -11,13 +11,14 @@ from utils import configure_pandas_display_options, filter_warnings, datetime_fo
 
 
 class SentenceSimilarity():
+    cos_sim: None
+    cos_sim_matrix: list
+    filtered_df: list
+    sentence_similarity_df: None
+
     def __init__(self):
         configure_pandas_display_options()
         filter_warnings()
-        self.cos_sim = None
-        self.cos_sim_matrix = []
-        self.filtered_df = []
-        self.sentence_similarity_df = None
 
     def compute_embeddings_and_similarity(self, hotel, df):
         self.filtered_df = df[df['Hotel'] == hotel] if hotel != 'all' else df
@@ -104,7 +105,8 @@ class SentenceSimilarity():
         while True:
             if sentence_similarity_df_len == 1:
                 time.sleep(0.5)
-                result = self.print_sentence_similarity_df(hotel, sentence_similarity_df_len)
+                result = self.print_sentence_similarity_df(
+                    hotel, sentence_similarity_df_len)
                 print(result)
                 break
             else:

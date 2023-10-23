@@ -1,9 +1,9 @@
 import os
-
-from colorama import Fore, Style
 import zipfile
 
-from config import ZIP_EXTENSION, SOURCE_DIRECTORY, TARGET_DIRECTORY, ARCHIVED_DATA_DIRECTORY, KEYWORDS_TO_UNZIP
+from colorama import Fore, Style
+
+from config import ARCHIVED_DATA_DIRECTORY, KEYWORDS_TO_UNZIP, SOURCE_DIRECTORY, TARGET_DIRECTORY, ZIP_EXTENSION
 
 
 class DataExtractor:
