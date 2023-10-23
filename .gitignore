@@ -4,6 +4,6 @@ results
 __pycache__/
 test.py
 application
-archive
-dashboard_data
-raw
+# archive
+# dashboard_data
+# raw
